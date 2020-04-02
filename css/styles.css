@@ -1,0 +1,144 @@
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.main-header {
+  min-height: 100px;
+  background-image: linear-gradient(
+    to top right,
+    rgb(219, 230, 18),
+    rgb(216, 228, 19),
+    rgb(213, 227, 20),
+    rgb(211, 225, 20),
+    rgb(208, 224, 21),
+    rgb(205, 222, 22),
+    rgb(174, 188, 56),
+    rgb(149, 165, 71),
+    rgb(66, 118, 158),
+    rgb(70, 77, 180),
+    rgb(66, 68, 192),
+    rgb(57, 57, 235)
+  );
+}
+
+.main-header__navigation {
+  max-width: 920px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 12px;
+  padding-left: 12px;
+}
+
+.service-list__link,
+.contact-list__link {
+  display: block;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #363333;
+  font-weight: 700;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  transition: 0.3s;
+}
+
+.service-list__link:hover,
+.service-list__link:focus,
+.contact-list__link:hover,
+.contact-list__link:focus {
+  transform: scale(1.2);
+  color: #fff;
+}
+
+.logo {
+  position: relative;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.logo-link {
+  display: block;
+  font-family: Dancing Script, sans-serif;
+  font-style: italic;
+  padding: 20px;
+  color: #363333;
+}
+
+.top,
+.bottom {
+  position: absolute;
+  font-size: 24px;
+}
+
+.top {
+  transform: translate(-80%, 20%);
+}
+
+.r {
+  font-size: 60px;
+}
+
+.bottom {
+  transform: translate(2%, 136%);
+}
+
+.secondary-nav__list {
+  max-width: 920px;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  height: 40px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.secondary-nav__link {
+  display: block;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 5px;
+  font-size: 14px;
+  transition: 0.3s;
+  color: #363333;
+}
+
+.secondary-nav__link:hover,
+.secondary-nav__link:focus {
+  transform: scale(1.05);
+}
+
+.banner {
+  width: 920px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.ftr {
+  max-height: 100px;
+  background-image: linear-gradient(
+    to top right,
+    rgb(217, 217, 32),
+    rgb(207, 208, 50),
+    rgb(197, 198, 68),
+    rgb(187, 189, 86),
+    rgb(177, 180, 104),
+    rgb(167, 170, 122),
+    rgb(156, 161, 140),
+    rgb(146, 151, 158),
+    rgb(136, 142, 176),
+    rgb(126, 133, 194),
+    rgb(116, 123, 212),
+    rgb(106, 114, 230)
+  );
+}
+
+.ftr__title {
+  margin: 0;
+}
