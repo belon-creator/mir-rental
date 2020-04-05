@@ -48,6 +48,10 @@ body {
   padding-left: 12px;
 }
 
+.hdr-nav {
+  display: flex;
+}
+
 .service-list__link,
 .contact-list__link {
   color: #363333;
@@ -99,14 +103,15 @@ body {
 }
 
 .secondary-nav__list {
-  margin-right: auto;
-  margin-left: auto;
+  display: flex;
+  /* margin-right: auto;
+  margin-left: auto; */
 }
 
 .secondary-nav__link {
   display: block;
   font-family: Arial, Helvetica, sans-serif;
-  padding: 5px;
+  padding: 10px;
   font-size: 14px;
   transition: 0.3s;
   color: #363333;
@@ -118,10 +123,18 @@ body {
 }
 
 .first-page-content {
-  /* max-width: 920px; */
+  max-width: 920px;
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 80px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.first-page-content img {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .about-title {
@@ -137,6 +150,7 @@ body {
 }
 
 .ftr {
+  display: flex;
   min-height: 100px;
   background-image: linear-gradient(
     to top right,
@@ -173,21 +187,21 @@ body {
   transform: scale(1.2);
 }
 
-@media screen and (min-width: 320px) and (max-width: 640px) {
+@media screen and (min-width: 320px) and (max-width: 639px) {
   .main-header,
   .ftr {
     min-width: 320px;
   }
 
   .hdr-nav {
-    display: flex;
     justify-content: space-between;
   }
 
+  .secondary-nav__list {
+    flex-direction: column;
+  }
+
   .first-page-content img {
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
     width: 320px;
   }
 
@@ -198,18 +212,68 @@ body {
 
   .ftr,
   .secondary-nav__list {
-    display: flex;
     flex-direction: column;
     align-items: center;
   }
 }
 
-@media screen and (min-width: 460px) and (max-width: 640px) {
+@media screen and (min-width: 640px) and (max-width: 920px) {
   .hdr-nav {
     justify-content: space-around;
   }
+
+  .first-page-content img {
+    width: 460px;
+  }
+
+  .ftr,
+  .secondary-nav__list {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 920px) {
+  .main-header__navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 920px;
+  }
+
+  .hdr-nav {
+    flex-basis: 30%;
+    justify-content: space-between;
+  }
+
+  .secondary-nav {
+    width: 920px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .secondary-nav__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
   .first-page-content img {
     display: block;
-    width: 460px;
+    width: 900px;
+  }
+
+  .ftr {
+    align-items: center;
+  }
+
+  .ftr__navigation {
+    width: 920px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .ftr__contact-list {
+    display: flex;
+    justify-content: space-between;
   }
 }
