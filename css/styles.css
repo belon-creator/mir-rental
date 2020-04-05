@@ -192,8 +192,8 @@ body {
   }
 
   .first-page-content {
-    padding-right: 8px;
-    padding-left: 8px;
+    padding-right: 10px;
+    padding-left: 10px;
   }
 
   .ftr,
@@ -201,5 +201,15 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+}
+
+@media screen and (min-width: 460px) and (max-width: 640px) {
+  .hdr-nav {
+    justify-content: space-around;
+  }
+  .first-page-content img {
+    display: block;
+    width: 460px;
   }
 }
