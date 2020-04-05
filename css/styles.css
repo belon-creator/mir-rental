@@ -1,3 +1,16 @@
+html {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
 .list {
   margin: 0;
   padding: 0;
@@ -41,7 +54,7 @@
 .service-list__link,
 .contact-list__link {
   display: block;
-  font-family: Arial, Helvetica, sans-serif;
+
   color: #363333;
   font-weight: 700;
   padding-top: 5px;
@@ -114,10 +127,22 @@
   transform: scale(1.05);
 }
 
-.banner {
-  width: 920px;
+.first-page-content {
+  max-width: 920px;
   margin-right: auto;
   margin-left: auto;
+}
+
+.about-title {
+  color: #363333;
+  font-size: 24px;
+  text-align: center;
+}
+
+.about-text {
+  color: #363333;
+  font-size: 16px;
+  line-height: 1.2;
 }
 
 .ftr {
@@ -139,6 +164,24 @@
   );
 }
 
-.ftr__title {
-  margin: 0;
+.ftr__contact-list {
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 920px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ftr__contact-list__link {
+  display: block;
+  padding: 20px;
+  color: #363333;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.ftr__contact-list__link:hover {
+  color: #fff;
+  transform: scale(1.2);
 }
