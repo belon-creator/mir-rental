@@ -104,8 +104,6 @@ body {
 
 .secondary-nav__list {
   display: flex;
-  /* margin-right: auto;
-  margin-left: auto; */
 }
 
 .secondary-nav__link {
