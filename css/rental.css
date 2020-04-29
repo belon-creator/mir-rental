@@ -42,7 +42,7 @@ body {
 
 img {
   display: block;
-
+  max-height: 400px;
   transition: 0.3s;
 }
 
