@@ -1,9 +1,31 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
 body {
   margin: 0;
 }
 .famous {
   padding: 12px;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(rgb(183, 187, 240)),
+    color-stop(rgb(191, 197, 222)),
+    color-stop(rgb(199, 206, 204)),
+    color-stop(rgb(224, 240, 182)),
+    color-stop(rgb(217, 226, 164)),
+    to(rgb(224, 235, 150))
+  );
+  background-image: -o-linear-gradient(
+    top,
+    rgb(183, 187, 240),
+    rgb(191, 197, 222),
+    rgb(199, 206, 204),
+    rgb(224, 240, 182),
+    rgb(217, 226, 164),
+    rgb(224, 235, 150)
+  );
   background-image: linear-gradient(
     to bottom,
     rgb(183, 187, 240),
@@ -17,6 +39,8 @@ body {
 
 .img-container {
   max-width: 920px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-right: auto;
   margin-left: auto;
@@ -46,7 +70,12 @@ body {
 
 @media screen and (min-width: 320px) and (max-width: 639px) {
   .img-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
   }
 
@@ -57,8 +86,15 @@ body {
 
 @media screen and (min-width: 640px) {
   .img-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
   }
 
